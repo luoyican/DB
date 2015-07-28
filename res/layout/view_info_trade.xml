@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3cb371" >
+  <LinearLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  2015年7月28日，与不知道公司旗下的推销保险项目组进行基本信息交易，共得收益1元" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  2015年7月29日，与哎呦不错公司旗下的医疗健康项目进行健康信息交易，共得收益2元" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  2015年8月1日，与土豪公司旗下的调查人们日常出行交通工具项目组进行出行信息交易，共得收益3元" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="  2015年8月4日，与黑超市公司旗下的暗黑项目进行消费信息交易，共得收益4元" />
+
+</LinearLayout>
+</RelativeLayout>

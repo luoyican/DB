@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/menu_bg"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true" 
+    android:focusable="true"  
+    android:focusableInTouchMode="true">
+
+     <RelativeLayout 
+       android:layout_height="40dp"
+       android:layout_width="match_parent"
+       >
+       <TextView
+           android:id="@+id/registertitle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:text="@string/registertitle"
+           android:textSize="28sp"
+           android:textColor="#ffffff" />
+
+       <ImageButton
+           android:id="@+id/back_register"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_margin="5dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignTop="@+id/registertitle"
+           android:background="@drawable/back" />
+
+       </RelativeLayout>   
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp" >
+
+       <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/usernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phonenumber"
+            android:textSize="18sp"
+            android:textColor="#ffffff" />
+        <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="11"
+                android:inputType="numberDecimal" >
+
+                <requestFocus />
+            </EditText>
+    </TableRow> 
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loginpassword"
+                android:textSize="18sp"
+                android:textColor="#ffffff" />
+            <EditText
+                android:id="@+id/loginpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" >
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passwordagain"
+                android:textSize="18sp"
+            android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/passwordagain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" >
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ToIPassword"
+                android:textSize="18sp"
+            android:textColor="#ffffff" />
+            <EditText
+                android:id="@+id/toIPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passwordagain"
+            android:textSize="18sp"
+            android:textColor="#ffffff" />
+        <EditText
+                android:id="@+id/passwordagain2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" >
+
+                <requestFocus />
+            </EditText>
+    </TableRow>   
+  </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+          >
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/registertitle"
+            android:textSize="26sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"          
+             />
+    </LinearLayout>
+
+</LinearLayout>
